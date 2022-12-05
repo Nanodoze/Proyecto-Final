@@ -24,7 +24,7 @@
     <div class="teal">
         <div id="navigate">
             <div  class="nav-bar col s12">
-                <nav class="teal">
+                <nav class="teal" style="padding: 0px 10px;">
                     <div class="teal nav-wrapper">
                       <ul id="nav-mobile" class="teal left hide-on-med-and-down">
                         <li><a href="?modulo=inicio">Bienvenido</a></li>
