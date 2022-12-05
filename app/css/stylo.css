@@ -1,0 +1,31 @@
+@media screen and (max-width:425px){
+    #navigate a{
+        display:block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #bigol div{
+        display:block;
+        width: 100%;
+    }
+
+    #bigol a{
+        display: block;
+        width: 100%;
+    }
+
+    #bigol img{
+        display:block;
+        width: 100%;
+    }
+
+
+}
+
+
+
+#bigol img{
+    width: 100%;
+}
+
