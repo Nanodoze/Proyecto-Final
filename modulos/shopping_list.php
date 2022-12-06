@@ -17,7 +17,8 @@ global $mysqli;
                     Descripcion del producto: <b><span><?php echo $descripcion ?></span></b>
                     Cantidad a comprar: <b><span><?php $cantidad=1; echo $cantidad ?></span></b>
                     <h5>Precio: <b><?php $preciofinal=$precio*$cantidad; echo "L ".number_format($preciofinal, 2) ?></b></h5>
-                    <button class="btn waves-effect waves-light teal" type="add" onclick=agregar()><i class="material-icons right">add</i></button>
+                    <button class="btn waves-effect waves-light teal left" type="add" onclick=agregar()><i class="material-icons">add</i></button>
+                    <button class="btn waves-effect waves-light teal right" type="add" onclick=restar()><i class="material-icons">cancel</i></button>
                 </div>
             </div>
             <?php
@@ -43,5 +44,11 @@ global $mysqli;
 <script>
     function agregar(){
         <?php $cantidad= $cantidad+1 ?>
+    }
+</script>
+
+<script>
+    function restar(){
+        <?php $cantidad= $cantidad-1 ?>
     }
 </script>
