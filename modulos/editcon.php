@@ -15,13 +15,11 @@ if($stmt = $mysqli->prepare($strsql)){
             <form class="col s12" method="POST">
                 <div class="row">
                     <div class="input-field col l4 m4 s6">
-                        <input name="nombre_categoria" type="text" class="validate">
-                        <?php echo $nombre_categoria ?>
+                        <input name="nombre_categoria" type="text" class="validate" value="<?php echo $nombre_categoria ?>">
                         <label>Nombre de la Consola</label>
                     </div>
                     <div class="input-field col l6 m6 s12">
-                        <input name="descripcion" type="text" class="validate">
-                        <?php echo $descripcion?>
+                        <input name="descripcion" type="text" class="validate" value="<?php echo $descripcion?>">
                         <label>Descripcion de la Consola</label>
                     </div>
                     <button class="btn waves-effect waves-light" type="submit" name="edit">Actualizar Consolas

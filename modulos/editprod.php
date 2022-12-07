@@ -15,36 +15,30 @@ if($stmt = $mysqli->prepare($strsql)){
             <form class="col s12" method="POST">
                 <div class="row">
                     <div class="input-field col l4 m4 s6">
-                        <input name="nombre_producto" type="text" class="validate">
-                        <?php echo $nombre_producto ?>
+                        <input name="nombre_producto" type="text" class="validate" value="<?php echo $nombre_producto ?>">
                         <label>Nombre del Producto</label>
                     </div>
                     <div class="input-field col l2 m2 s6">
-                        <input name="idcategoria" type="text" class="validate">
-                        <?php echo $categoria ?>
+                        <input name="idcategoria" type="text" class="validate" value="<?php echo $categoria ?>">
                         <label>ID de Consola</label>
                     </div>
                     <div class="input-field col l6 m6 s12">
-                        <input name="descripcion" type="text" class="validate">
-                        <?php echo $descripcion?>
+                        <input name="descripcion" type="text" class="validate" value="<?php echo $descripcion?>">
                         <label>Descripcion del Producto</label>
                     </div>
                 </div>
                 <div class="row">
                 <div class="input-field col l3 m3 s6">
-                        <input name="url_imagen" type="text" class="validate">
-                        <?php echo $url_imagen ?>
+                        <input name="url_imagen" type="text" class="validate" value="<?php echo $url_imagen ?>">
                         <label>URL de Imagen</label>
                     </div>
                     <div class="input-field col l2 m2 s6">
-                        <input name="precio" type="text" class="validate">
-                        <?php echo $precio ?>
+                        <input name="precio" type="text" class="validate" value="<?php echo $precio ?>">
                         <label>Precio</label>
                     </div>
                     <div class="input-field col l2 m2 s6">
-                        <input name="cantidad" type="text" class="validate">
+                        <input name="cantidad" type="text" class="validate" value="<?php echo $cantidad ?>">
                         <label>Cantidad</label>
-                        <?php echo $cantidad ?>
                     </div>
                     <button class="btn waves-effect waves-light" type="submit" name="edit">Actualizar Información de Producto
                         <i class="material-icons right">send</i>

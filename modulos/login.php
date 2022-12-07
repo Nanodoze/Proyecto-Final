@@ -10,7 +10,7 @@
                 <label>Usuario</label>
             </div>
             <div class="input-field col s12">
-                <input placeholder="Contraseña" name="contra" type="text" class="validate" required>
+                <input placeholder="Contraseña" name="contra" type="password" class="validate" required>
                 <label>Contraseña</label>
             </div>
             <a class="btn waves-effect waves-light" href="?modulo=admin_productos">Iniciar Sesión
